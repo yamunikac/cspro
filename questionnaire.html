@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="questionnaire.css">
+<script src="questionnaire.js"></script>
+
+<div class="content questionnaire-form">
+  <h1>QUESTIONNAIRE FORM</h1><br>
+
+  <form id="governmentForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div><br>
+
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+    </div><br>
+
+    <div>
+      <label for="healthConcern">Health Concern:</label>
+      <input type="text" id="healthConcern" name="healthConcern" required />
+    </div><br>
+
+    <div>
+      <label for="cause">Cause:</label>
+      <input type="text" id="cause" name="cause" required />
+    </div><br>
+
+    <div>
+      <label for="medicine">Are you using any medicine?</label>
+      <select id="medicine" name="medicine" required>
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div><br>
+
+    <div>
+      <label for="interested">Would you try traditional remedies (Ayurveda, Yoga, etc.)?</label>
+      <select id="interested" name="interested" required>
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="Maybe">Maybe</option>
+        <option value="No">No</option>
+      </select>
+    </div><br>
+
+    <div>
+      <label for="suggestions">Suggestions / Remedies you use at home:</label>
+      <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+    </div><br>
+
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</div>

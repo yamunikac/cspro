@@ -1,0 +1,51 @@
+.questionnaire-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.questionnaire-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.questionnaire-form label {
+  font-weight: bold;
+  display: inline-block;
+  margin: 6px 0 2px;
+}
+
+.questionnaire-form input[type="text"],
+.questionnaire-form input[type="number"],
+.questionnaire-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.questionnaire-form textarea {
+  height: 80px;
+}
+
+.questionnaire-form button {
+  width: 150px;
+  padding: 10px;
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.questionnaire-form button:hover {
+  background-color: yellow;
+  color: midnightblue;
+}
+
+.scheme-options-column div {
+  margin-top: 5px;
+}

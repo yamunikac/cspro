@@ -1,0 +1,48 @@
+.survey-pictures {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.survey-pictures h1 {
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.pictures-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.image-box {
+  text-align: center;
+  position: relative;
+}
+
+.pictures-grid img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  cursor: zoom-in;
+  z-index: 1;
+}
+
+.pictures-grid img:hover {
+  transform: scale(2.2);
+  z-index: 10;
+  position: relative;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}

@@ -1,0 +1,52 @@
+.activity-log {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.activity-log h1, .activity-log h2 {
+  text-align: center;
+  color: #003366;
+}
+
+.activity-log table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.activity-log th, .activity-log td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.activity-log th {
+  background-color: #003366;
+  color: white;
+}
+
+.activity-log tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-container button:hover {
+  background-color: yellow;
+  color: midnightblue;
+}

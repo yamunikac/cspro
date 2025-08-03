@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parent Layout</title>
+  <link rel="stylesheet" href="parent_styles.css" />
+</head>
+<body>
+
+
+  <!--sample-->
+
+<header class="header">
+  <div class="header-container">
+  <div class="logo-title">
+    <img src="logo.jpg" alt="Logo">
+      <div class="header-text">
+        <h1>GEETHANJALI INSTITUTE OF SCIENCE AND TECHNOLOGY</h1>
+        <p class="sub">A unit of USHODAYA EDUCATIONAL SOCIETY</p>
+        <p class="affiliations">
+          <span>Approved by AICTE, New Delhi & Permanently Affiliated to JNTUA, Ananthapuram</span><br>
+          <span>NAAC 'A' Grade Accredited Institution, An ISO 9001:2015 certified Institution</span><br>
+          <span>Recognized under Sec. 2(f) & 12(B) of UGC Act, 1956</span><br>
+          <span>3rd Mile, Bombay Highway, Gangavaram(V), Kovur(M), SPSR Nellore(Dt) 524137</span>
+        </p>
+</div>
+
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" onclick="loadPage('college_events.html')">Home</a></li>
+      <li><a href="#" onclick="loadPage('abstract.html')">Abstract</a></li>
+      <li><a href="#" onclick="loadPage('introduction.html')">Introduction</a></li>
+      <li><a href="#" onclick="loadPage('surveydata.html')">Survey Data</a></li>
+      <li><a href="#" onclick="loadPage('conclusion.html')">Conclusion</a></li>
+      <li><a href="#" onclick="loadPage('activity.html')">Activity Log</a></li>
+      <li><a href="#" onclick="loadPage('questionnaire.html')">Questionnaire</a></li>
+      <li><a href="#" onclick="loadPage('surveypictures.html')">Survey Pictures</a></li>
+      <li><a href="#" onclick="loadPage('members.html')">Members</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Main container where child pages load -->
+  <main id="content" class="main-content">
+    <h2>Welcome</h2>
+    <p>This is the homepage. Use the menu to load content.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>3rd Mile, Bombay Highway, Gangavaram(V), Kovur(M), SPSR Nellore(Dt), 524137</p>
+    <p>&copy; 2025 GEETHANJALI INSTITUTE OF SCIENCE AND TECHNOLOGY. All rights reserved.</p>
+  </footer>
+
+  <!-- JS to dynamically load child content -->
+  <script>
+    function loadPage(page) {
+      fetch(page)
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("content").innerHTML = data;
+        })
+        .catch(() => {
+          document.getElementById("content").innerHTML = "<p>Error loading page.</p>";
+        });
+    }
+
+    // Load home page by default
+   window.onload = () => loadPage("college_events.html");
+
+  </script>
+
+</body>
+</html>
